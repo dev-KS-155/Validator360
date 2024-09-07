@@ -1,0 +1,33 @@
+{
+  "name": "validotor360",
+  "version": "1.0.0",
+  "description": "Validotor360 is a robust validation package that ensures data integrity by verifying that required fields are not null, undefined, or empty, and validating specific formats for emails, passwords, and phone numbers.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "babel src --out-dir lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/dynamic-validator"
+  },
+  "keywords": [
+    "validation",
+    "fields",
+    "required",
+    "null-check",
+    "empty-check",
+    "custom-validation",
+    "dynamic-validator"
+  ],
+  "author": "Krishna Sumit",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^27.0.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.25.6",
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4"
+  }
+}
