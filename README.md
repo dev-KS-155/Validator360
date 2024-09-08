@@ -1,13 +1,13 @@
-# Validotor360
+# Validator360
 
-Validotor360 is a robust validation package that ensures data integrity by checking required fields, such as strings, objects, arrays, numbers, and more, to ensure they are not null, undefined, or empty. It also validates specific formats for emails, passwords, and phone numbers.
+Validator360 is a robust validation package that ensures data integrity by checking required fields, such as strings, objects, arrays, numbers, and more, to ensure they are not null, undefined, or empty. It also validates specific formats for emails, passwords, and phone numbers.
 
 ## Installation
 
 To install the package, run:
 
 ```bash
-npm install validotor360
+npm install Validator360
 
 ```
 ## Usage
@@ -20,7 +20,7 @@ const {
   validatePhone, 
   validateURL, 
   validatePassword 
-} = require("validotor360");
+} = require("Validator360");
 
 ```
 
