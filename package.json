@@ -1,7 +1,7 @@
 {
   "name": "validotor360",
   "version": "1.0.0",
-  "description": "Validotor360 is a robust validation package that ensures data integrity by verifying that required fields are not null, undefined, or empty, and validating specific formats for emails, passwords, and phone numbers.",
+  "description": "Validotor360 is a robust validation package that ensures data integrity by checking required fields, such as strings, objects, arrays, numbers, and more, to ensure they are not null, undefined, or empty. It also validates specific formats for emails, passwords, and phone numbers.",
   "main": "src/index.js",
   "scripts": {
     "test": "jest",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/dynamic-validator"
+    "url": "https://github.com/dev-KS-155/Validator360.git"
   },
   "keywords": [
     "validation",

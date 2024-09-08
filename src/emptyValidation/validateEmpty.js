@@ -1,6 +1,6 @@
 const isEmpty = require("./emptyChecker");
 
-const validateField = (value, fieldName) => {
+const singleEmptyValidation = (value, fieldName) => {
     if (isEmpty(value)) {
         return `${fieldName} is required`;
     }
@@ -11,7 +11,7 @@ const validateField = (value, fieldName) => {
 const validateAllFields = (data) => {
     const errors = {};
     for (const [key, value] of Object.entries(data)) {
-        const error = validateField(value, key);
+        const error = singleEmptyValidation(value, key);
         if (error) {
             errors[key] = error;
         }
@@ -21,4 +21,4 @@ const validateAllFields = (data) => {
 }
 
 
-module.exports = { validateField, validateAllFields };
+module.exports = { singleEmptyValidation, validateAllFields };

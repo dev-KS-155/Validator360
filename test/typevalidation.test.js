@@ -1,6 +1,6 @@
-const { validateEmail, validatePhone, validateURL, validatePassword } = require("../typeValidation/regixOfType");
+const { validateEmail, validatePhone, validateURL, validatePassword } = require("../src/typeValidation/regixOfType");
 
-const { validateAllFields } = require("../emptyValidation/validateEmpty");
+const { validateAllFields } = require("../src/emptyValidation/validateEmpty");
 
 test('validates correct email', () => {
     expect(validateEmail('test@example.com')).toBe(true);
@@ -49,5 +49,6 @@ test('check all empty field types', () => {
     expect(errors).toHaveProperty('friends', 'friends is required');
     expect(errors).toHaveProperty('phone', 'phone is required');
 });
+
 
 

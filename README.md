@@ -1,6 +1,6 @@
 # validotor360
 
-`validotor360` is a package for various validation utilities. It provides functionalities for checking empty values and validating different types of data such as emails, phone numbers, passwords, and URLs.
+`Validotor360` is a robust validation package that ensures data integrity by checking required fields, such as strings, objects, arrays, numbers, and more, to ensure they are not null, undefined, or empty. It also validates specific formats for emails, passwords, and phone numbers.
 
 ## Installation
 
