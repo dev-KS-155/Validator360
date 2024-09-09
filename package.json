@@ -1,6 +1,6 @@
 {
   "name": "validator360",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Validator360 is a robust validation package that ensures data integrity by checking required fields, such as strings, objects, arrays, numbers, and more, to ensure they are not null, undefined, or empty. It also validates specific formats for emails, passwords, and phone numbers.",
   "main": "src/index.js",
   "scripts": {
