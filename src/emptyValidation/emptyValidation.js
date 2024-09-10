@@ -1,17 +1,17 @@
 const isEmpty = require("./emptyChecker");
 
-const singleEmptyValidation = (value, fieldName) => {
-    if (isEmpty(value)) {
-        return `${fieldName} is required`;
+const singleEmptyValidation = (value, fieldName, customMessage) => {
+    if (isEmpty(value.trim())) {
+        return isEmpty(customMessage.trim()) ? `${fieldName} is required` : `${fieldName}${customMessage}`;
     }
     return null;
 }
 
 
-const validateAllFields = (data) => {
+const validateAllFields = (data, customMessage) => {
     const errors = {};
     for (const [key, value] of Object.entries(data)) {
-        const error = singleEmptyValidation(value, key);
+        const error = singleEmptyValidation(value, key, customMessage);
         if (error) {
             errors[key] = error;
         }

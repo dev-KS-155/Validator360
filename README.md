@@ -7,7 +7,7 @@ Validator360 is a robust validation package that ensures data integrity by check
 To install the package, run:
 
 ```bash
-npm install Validator360
+npm install validator360
 
 ```
 ## Usage
