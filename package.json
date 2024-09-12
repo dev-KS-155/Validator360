@@ -1,14 +1,14 @@
 {
   "name": "validator360",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Validator360 is a robust validation package that ensures data integrity by checking required fields, such as strings, objects, arrays, numbers, and more, to ensure they are not null, undefined, or empty. It also validates specific formats for emails, passwords, and phone numbers.",
   "main": "src/index.js",
   "exports": {
     ".": "./src/index.js",
-    "./customValidation": "./src/CustomValidators/customValidator.js",
-    "./fileValidation": "./src/fileTypeValidation/filetypeValidation.js",
+    "./customValidation": "./src/CustomValidators/customValidation.js",
+    "./filetypeValidation": "./src/fileTypeValidation/filetypeValidation.js",
     "./emptyValidation": "./src/emptyValidation/emptyValidation.js",
-    "./regixFormatValidation": "./src/RegexFormatValidation/regixFormatValidation.js"
+    "./regexFormatValidation": "./src/RegexFormatValidation/regexFormatValidation.js"
   },
   "scripts": {
     "test": "jest",
@@ -31,8 +31,8 @@
   "license": "MIT",
   "dependencies": {
     "@google/generative-ai": "^0.17.2",
-    "dotenv": "^16.4.5",
     "jest": "^27.0.6"
+
   },
   "devDependencies": {
     "@babel/cli": "^7.25.6",

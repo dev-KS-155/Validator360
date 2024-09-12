@@ -15,7 +15,7 @@ const GenerateContent = async (prompt, USER_API_KEY) => {
 
   const result = await model.generateContent(prompt);
   const response = result.response.text();
-  console.log(response)
+  // console.log(response)
   return response;
 }
 

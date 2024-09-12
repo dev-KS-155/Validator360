@@ -5,6 +5,10 @@ const isEmpty = require('../src/emptyValidation/emptyChecker');
 jest.mock('../src/emptyValidation/emptyChecker');
 
 describe('Validation Functions', () => {
+    beforeEach(() => {
+        // Clear all instances and calls to constructor and all methods:
+        isEmpty.mockClear();
+    });
 
     describe('singleEmptyValidation', () => {
         it('should return a required message if value is empty and no custom message is provided', () => {
@@ -17,8 +21,8 @@ describe('Validation Functions', () => {
         it('should return a custom message if value is empty and a custom message is provided', () => {
             isEmpty.mockImplementation(value => value.trim() === '');
 
-            const result = singleEmptyValidation('   ', 'FieldName', ' - Custom message');
-            expect(result).toBe('FieldName - Custom message');
+            const result = singleEmptyValidation('   ', 'FieldName', 'Custom message');
+            expect(result).toBe('Custom message');
         });
 
         it('should return null if value is not empty', () => {
@@ -39,10 +43,10 @@ describe('Validation Functions', () => {
                 field3: '   '
             };
 
-            const result = validateAllFields(data, ' - Custom message');
+            const result = validateAllFields(data, 'Custom message');
             expect(result).toEqual({
-                field1: 'field1 - Custom message',
-                field3: 'field3 - Custom message'
+                field1: 'Custom message',
+                field3: 'Custom message'
             });
         });
 

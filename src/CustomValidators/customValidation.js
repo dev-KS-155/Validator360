@@ -6,6 +6,7 @@ const addCustomValidator = (name, validatorFunction) => {
         throw new Error('Invalid arguments: name must be a string and validatorFunction must be a function.');
     }
     customValidators[name] = validatorFunction;
+    
 };
 
 const validateWithCustom = (name, value, ...args) => {

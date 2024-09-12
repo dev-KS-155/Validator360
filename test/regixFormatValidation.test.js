@@ -5,7 +5,7 @@ const {
     validatePassword,
     validateDate,
     validateCreditCard
-} = require('../src/RegexFormatValidation/regixFormatValidation');
+} = require('../src/RegexFormatValidation/regexFormatValidation');
 
 describe('Validation Functions', () => {
     describe('validateEmail', () => {
