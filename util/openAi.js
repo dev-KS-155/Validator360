@@ -9,8 +9,8 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 //   },
 // };
 
-const GenerateContent = async (prompt) => {
-  const genAI = new GoogleGenerativeAI(GOOGLE_API_KEY);
+const GenerateContent = async (prompt, USER_API_KEY) => {
+  const genAI = new GoogleGenerativeAI(USER_API_KEY);
   const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
   const result = await model.generateContent(prompt);
@@ -18,4 +18,6 @@ const GenerateContent = async (prompt) => {
   console.log(response)
   return response;
 }
+
 module.exports = GenerateContent;
+

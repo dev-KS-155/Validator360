@@ -1,4 +1,4 @@
-const { addCustomValidator, validateWithCustom } = require('../src/CustomValidators/customValidator');
+const { addCustomValidator, validateWithCustom } = require('../src/CustomValidators/customValidation');
 
 describe('Custom Validator Functions', () => {
     describe('addCustomValidator', () => {
