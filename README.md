@@ -16,8 +16,8 @@ npm install validotor360
 |---------------------|------------------------------------------------------------------------------------------------------|
 | `customValidation` | `addCustomValidator`, `validateWithCustom`                                                          |
 | `emptyValidation`  | `singleEmptyValidation`, `validateAllFields`                                                        |
-| `fileValidation`   | `validateSingleFileSize`, `validateFileSize`, `validateSingleMimeType`, `validateMimeTypes`         |
-| `regexValidation`  | `validateEmail`, `validatePhone`, `validateURL`, `validatePassword`, `validateDate`, `validateCreditCard` |
+| `filetypeValidation`   | `validateSingleFileSize`, `validateFileSize`, `validateSingleMimeType`, `validateMimeTypes`         |
+| `regexFormatValidation`  | `validateEmail`, `validatePhone`, `validateURL`, `validatePassword`, `validateDate`, `validateCreditCard` |
 
 
 
@@ -27,8 +27,8 @@ You can import any of these functions based on your needs:
 const { 
   customValidation, 
   emptyValidation, 
-  fileValidation, 
-  regexValidation, 
+  filetypeValidation, 
+  regexFormatValidation, 
 } = require('validator360');
 
 // Example: Using regexValidation
